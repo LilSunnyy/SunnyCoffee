@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="assets/img/shortcut-icon.png" type="image/x-icon">
     <link href="./assets/css/main.css" rel="stylesheet";>
     <link href="./assets/css/base.css" rel="stylesheet";>
+    <script src="https://kit.fontawesome.com/b2e34e875b.js" crossorigin="anonymous"></script>
 </head>
 <body style="overflow: visible;">
     <div class="app">
@@ -37,28 +38,103 @@
                     <p>Mang muộn phiền ra phơi</p>
                 </div>
             </div>
-                <div class="section">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="banner">
-                                <a href="menu.html">Menu 
+            <div class="section">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="banner">
+                            <a href="menu.html">
+                                <div class="img-container ">
+                                    <span class="col-6-style" >Menu</span>
                                     <img src="/assets/img/s1.jpg">
-                                </a>                            
-                        </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="banner"><a href="news.html"> Tin tức</a></div>
+                                </div>
+                            </a>                            
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="banner">
+                            <a href="news.html"> 
+                                <div class="img-container ">
+                                    <span class="col-6-style">Tin tức</span>
+                                    <img src="/assets/img/s2.jpg">
+                                </div>
+                            </a>    
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="lineHeight">
-                                <p class="wow slideInLeft" data-wow-delay="0.3s" data-wow-duration="1s"><a href="about.html">Về chúng tôi</a></p>
-                                <p class="wow slideInRight" data-wow-delay="0.3s" data-wow-duration="1s">Tích cực quay tay, vận may sẽ đến</p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner-1">
+                                <a href="about.html">
+                                    <img src="/assets/img/s4.jpg">
+                                    <div class="line-height">
+                                    <span class="col-12-style">Về chúng tôi</span></a>
+                                        <p>Những lời đàm tiếu qua linh tinh
+                                            Cùng ý chí sinh tồn đến say “Booyah”</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner-1">
+                                <a href="hiring.html">
+                                    <img src="/assets/img/s5.jpg">
+                                    <div class="line-height">
+                                    <span class="col-12-style">Tuyển dụng</span></a>
+                                        <p>Gia nhập gia đình Nắng ngay hôm nay
+                                            Đọc thông tin tại đây để biết thêm chi tiết.
+                                            Nắng nhiệt liệt chào mừng.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="modal__overlay">
+                    <div class="modal__body">
+                           <div class="auth-form">
+                                <div class="button-box">
+                                   <div id="btn"></div>
+                                    <button type="button" class="toggle-button" onclick="login()">ĐĂNG NHẬP</button>
+                                    <button type="button" class="toggle-button" onclick="register()">ĐĂNG KÝ</button>
+                                </div>
+                                <form id="login" class="input-group">
+                                    <input type="text" class="input-field" placeholder="Tên đăng nhập" required>
+                                    <input type="password" class="input-field" placeholder="Mật khẩu" required>
+                                    <input type="checkbox" class="checkbox"><span> Ghi nhớ đăng nhập </span>
+                                    <button type="submit" class="submit-btn">Đăng nhập</button>
+                                </form>
+                                <form id="register" class="input-group">
+                                    <input type="text" class="input-field" placeholder="Tên đăng nhập" required>
+                                    <input type="password" class="input-field" placeholder="Mật khẩu" required>
+                                    <input type="checkbox" class="checkbox"><span> Tôi đồng ý với các điều khoản dịch vụ và chính sách bảo mật </span>
+                                    <button type="submit" class="submit-btn">Đăng ký</button>
+                                </form>
+                                <div class="auth-form__socials">
+                                    <a href="#" class="auth-form__socials--facebook"><i class="auth-form__socials-icons fa-brands fa-square-facebook"></i> Đăng nhập bằng Facebook </a>
+                                    <a href="#" class="auth-form__socials--instagram"><i class="auth-form__socials-icons fa-brands fa-square-instagram"></i> Đăng nhập bằng Instagram</a>
+                                </div>
+                           </div>
+
+                       <script>
+                        var x = document.getElementById("login");
+                        var y = document.getElementById("register");
+                        var x = document.getElementById("btn");
+                        function login(){
+                            x.style.left = "0px";
+                            y.style.left = "100%";
+                        }
+                        function register(){
+                            y.style.left = "0px";
+                            x.style.left = "100%";
+                        }
+                       </script>
+                        </div>   
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
         <footer class="footer">

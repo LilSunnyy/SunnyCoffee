@@ -60,7 +60,7 @@ a{
     }
   }
 .main{
-    height:850px;
+    height:900px;
     background: url(../img/bg-1.png) no-repeat;
     background-size: cover;
 }
@@ -79,33 +79,212 @@ a{
     font-size: 50px;
     font-family: 'Updock', cursive;
 }
-.section{
-    height: 600px;
-}
 .row{
-    text-align: center;
     position: relative;
     display: flex;
     justify-content: space-evenly;
     font-family: 'Xanh Mono', monospace;
-    font-size: 50px;
+    font-size: 40px;
     padding: 100px;
     padding-bottom: 10px;
 }
 .col-6{
-    height: 200px;
+    height: 400px;
     width: 500px;
     display: flex;
     box-sizing: border-box;
-    border: 1px solid black;
 }
-
 .col-12{
-    height: 200px;
+    height: 400px;
     width: 1100px;
-    border: 1px solid black;
+    display: flex;
     box-sizing: border-box;
 }
-.banner{
+
+.banner {
     text-align: center;
+}
+
+.banner img{
+    height: 400px;
+    width: 500px;
+}
+.col-6-style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: normal;
+    background-color: bisque;
+    transition-duration: 0.5s;
+    text-transform: uppercase;
+    min-width: 50%;
+    font-weight: bold;
+}
+.img-container {
+    position: relative;
+    text-align: center;
+    color: #555555;
+}
+.col-6-style:hover {
+    transform: translate(-50%, -70%);
+    text-decoration: underline;
+}
+.col-12-style{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    line-height: 20px;
+    transition-duration: 0.5s;
+    text-transform: uppercase;
+    color: #555555;
+    font-weight: bold;
+}
+.banner-1 img{
+    height: 400px;
+    width: 1100px;
+}
+.line-height {
+    position: absolute;
+    left: 210px;
+    width: 550px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 241, 208, 0.9);
+    padding: 0 15px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition-duration: 0.4s;
+}
+.line-height>p {
+    position: relative;
+    font-size: 25px;
+    color: black;
+    margin: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.col-12:hover .line-height {
+    transform: translateX(100%);
+}
+.col-12-style::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    width: 150px;
+    height: 4px;
+    background: #555555;
+    transform: translateX(-50%);
+}
+/* Modal */
+.auth-form{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.button-box{
+    width: 300px;
+    height: 40px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;       
+    background: transparent;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    position: relative;     
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background:linear-gradient(to right, #ff105f,#ffad06);
+    border-radius: 30px;
+    transform: 0.5s;  
+}
+.input-group{
+    top: 80px;
+    position: absolute;
+    width: 300px;
+    transition: .5s;
+    padding-top: 40px;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+.checkbox{
+    margin: 30px 10px 30px 0;
+}
+.input-group span{
+    color: #777;
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 68px;
+    text-align: center;
+}
+.auth-form__socials{
+    position: absolute;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    bottom: 80px;   
+}
+.auth-form__socials--facebook {
+    background: #3b5998;
+    color: #fff;
+    margin: 0 4px;
+    padding: 0 4px;
+}
+.auth-form__socials--instagram {
+    background: rgb(228, 64, 95);
+    color: #fff;
+    margin: 0 4px;
+    padding: 0 4px;
+}
+.auth-form__socials-icons {
+    margin: 0 8px;
+}
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
 }
