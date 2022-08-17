@@ -38,7 +38,7 @@ a {
 .topnav img{
     position: relative;
     width: 6%;
-    background-color: #fff;
+    background-color: aliceblue;
     border-radius: 50%;
     z-index: 8;
 }
@@ -238,4 +238,118 @@ a {
 }
 .footer a:hover{
     color: var(--button-color);
+}
+.productsWrap{
+    position: relative;
+    margin: 5% 0;
+    padding: 0 15%;
+    display: flex;
+    border-top: 1px solid #bebfc0;
+    width: 100%;
+}
+.sidebarProduct{
+    position: relative;
+    width: 21%;
+}
+.cat-Item{
+    font-family: 'NittiTypewriter', monospace;
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 50px;
+    
+}
+.productsWrap .product-categories .cat-Item {
+    cursor: pointer;
+}
+.productsWrap .product-categories .cat-Item.active,
+.productsWrap .product-categories .cat-Item:hover {
+    color: burlywood;
+    position: relative;
+}
+.productsWrap .product-categories .cat-Item.active:before,
+.productsWrap .product-categories .cat-Item:hover:before {
+    content: '';
+    height: 2px;
+    width: 15px;
+    background: burlywood;
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+.productsWrap .product-categories a {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px; 
+}
+h3{
+    display: block;  
+}
+.grid{
+    position: relative;
+    width: 100%;
+}
+.grid-row{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.grid-col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.productsWrap .block-menu_item-title {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    padding-top: 30px;
+    color: #3c5e2c;
+    position: relative;
+}
+.productsWrap .itemProducts {
+    margin-bottom: 30px;
+    position: relative;
+}
+.itemProducts{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.productsWrap img {
+    max-width: 100%;
+}
+.itemProducts-name{
+    font-family: 'Xanh Mono', monospace;
+    font-size: 16px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin: 10px;
+    text-align: center;
+}
+.itemProducts-price{
+    font-family: 'NittiTypewriter', monospace;
+    font-size: 16px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.itemProducts-buying{
+    text-align: center;
+    color: #3c5e2c;
+    font-size: 20px;
+}
+.itemProducts-buying a:hover{
+    cursor: pointer;
+    color: var(--button-color);
+   
 }

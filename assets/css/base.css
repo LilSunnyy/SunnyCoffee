@@ -1,7 +1,7 @@
 :root{
     --white-color: #fff;
     --black-color: #000;
-    --text-color: #333;
+    --text-color: #3c5e2c;
     --button-color: #f50d05;
 }
 * {
@@ -13,18 +13,6 @@ html {
     font-size: 62.5%;
     line-height: 1.6rem;
     box-sizing: border-box;
-}
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__full-width{
-    width: 100%;
-}
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
 }
 /* -------Modal------- */
 .modal{
@@ -51,6 +39,8 @@ html {
     background-color: var(--white-color);
     border-radius: 5px;
     overflow: hidden;
+    padding: 0 20px;
+    
 }
 
 .button-box {
@@ -84,12 +74,13 @@ html {
 }
 
 
-.input-group {
+.auth-form__input-group {
     top: 80px;
     position: absolute;
     width: 300px;
     transition: .5s;
     padding-top: 40px;
+   
 }
 
 .input-field {
@@ -138,6 +129,7 @@ html {
     line-height: 30px;
     bottom:10%;
     width: 100%;
+    right: 0;
 }
 
 .auth-form__socials--facebook {
