@@ -1,0 +1,46 @@
+/* For PC */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    .row-res-tab{
+        display: block;
+    }
+
+}
+/* For tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .contact{
+        display: none;
+    }
+    .section:last-child{
+        display: none;
+    }
+    .row-res-tab{
+        display: block;
+    }
+    .topnav{
+        float: right;
+    }
+    .topnav img{
+        display: none;
+    }
+}
+/* For mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .contact{
+        display: none;
+    }
+    .section:last-child{
+        display: none;
+    }
+    .topnav{
+        float: right;
+    }
+    .topnav img{
+        display: none;
+    }
+    .row-res-tab{
+        display: block;
+    }
+}

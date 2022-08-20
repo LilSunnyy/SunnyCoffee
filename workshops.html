@@ -11,7 +11,6 @@
     <link rel="preload" href="assets/font/NittiTypewriter-21d2137501e11e71a7bc1d5f496a6b7f.otf" as="font" crossorigin="anonymous">
     <link href="./assets/css/main.css" rel="stylesheet" ;>
     <link href="./assets/css/base.css" rel="stylesheet" ;>
-    <link href="./assets/css/responsive.css" rel="stylesheet" ;>
     <script src="https://kit.fontawesome.com/b2e34e875b.js" as="font" crossorigin="anonymous"></script>
 </head>
 
@@ -19,116 +18,38 @@
     <div class="app">
         <header class="header">
 
-            <div class="contact">
+            <nav class="contact">
                 <a href="#">Email: dieuxuan666@gmail.com</a>
                 <a href="#">Hỏi đáp</a>
                 <a href="#" onclick="showModal()">Đăng nhập</a>
                 <a href="#" onclick="showModal()">Đăng ký</a>
-            </div>
-            <nav class="clear-fix">
-                <div class="topnav" id="myTopnav">
+            </nav>
+            <div class=" topnav">
                     <img src="./assets/img/logo.png">
                     <a href="index.html">Trang chủ</a>
                     <a href="menu.html">Menu</a>
                     <a href="workshops.html">Hệ thống cửa hàng</a>
                     <a href="about.html">Giới thiệu</a>
                     <a href="contact.html">Liên hệ</a>
-                    <div class="mobile-menu-button" id="mobile-menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                </div>
-            </nav>
-            
+            </div>
     </header>
-    </div>
     <div class="container">
-        <div class="main">
-            <div class="slogan">
-            <p>SunnyCoffee</p>           
-            <span>Mang muộn phiền ra phơi</span>
-            </div>
+        <div class="map-instruction">
+            <h2>CÁC CỬA HÀNG HOẠT ĐỘNG THEO QUẬN</h2>
+            <form>
+                <label for="chain" style="margin-left: 30px;">Chọn quận / huyện</label>
+                <select name="chain">
+                <option value="Quận Gò Vấp">Gò Vấp</option>
+                <option value="Quận 12">Quận 12</option>
+                <option value="Quận Thủ Đức">Thủ Đức</option>
+                <option value="Quận 1">Quận 1</option>
+                </select>
+            </form>
         </div>
-        <div class="section">
-            <div class="row">
-                <div class="col-6">
-                    <div class="banner">
-                        <a href="menu.html">
-                            <div class="img-container ">
-                                <span class="col-6-style">Menu</span>
-                                <img src="/assets/img/s1.jpg">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="banner">
-                        <a href="workshops.html">
-                            <div class="img-container ">
-                                <span class="col-6-style">Chi nhánh</span>
-                                <img src="/assets/img/s2.jpg">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row-res-tab">
-                    <div class="col-6">
-                        <div class="banner">
-                            <a href="about.html">
-                                <div class="img-container ">
-                                    <span class="col-6-style">Giới thiệu</span>
-                                    <img src="/assets/img/s3.jpg">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-res-tab"> 
-                    <div class="col-6">
-                        <div class="banner">
-                            <a href="contact.html">
-                                <div class="img-container ">
-                                    <span class="col-6-style">Liên hệ</span>
-                                    <img src="/assets/img/s4.jpg">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.700478513949!2d106.6771076!3d10.8170424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9ef195798144b1f!2zxJDhuqFpIGjhu41jIE3hu58gVFAuSENN!5e0!3m2!1svi!2s!4v1629802063398!5m2!1svi!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="section">
-            <div class="row">
-                <div class="col-12">
-                    <div class="banner-1">
-                        <a href="about.html">                           
-                                <img src="/assets/img/s4.jpg">
-                                <div class="line-height">
-                                    <span class="col-12-style">Về chúng tôi</span></a>                                              
-                                <p>Cảm ơn bạn đã đồng hành cùng chúng tôi trên bước đường phát triển.</p>
-                                </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="banner-1">
-                        <a href="hiring.html">                   
-                                <img src="/assets/img/s5.jpg">
-                                <div class="line-height">
-                                    <span class="col-12-style">Tuyển dụng</span></a>                                                  
-                                    <p> Gia nhập gia đình Nắng ngay hôm nay.
-                                        Đọc thông tin tại đây.</p>                      
-                                </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-            
-        </div>
-    </div>
-        </div>
+    </div> 
     <div class="modal">
         <div class="modal__overlay">
             <div class="modal__body">
@@ -171,6 +92,7 @@
             <a href="">Về chúng tôi</a>
             <a href="">Cửa hàng</a>
             <a href="">Khuyến mãi</a>
+            <a href="">Cơ hội nghề nghiệp</a>
         </div>
         <div>
             <a href="">Điều khoản sử dụng</a>
@@ -179,7 +101,7 @@
         <div>
             <div class="footer-contact">
                 <a><i class="fa-solid fa-square-phone"></i> 1900 1508</i></a>
-                <a><i class="fa-solid fa-location-dot"></i> 371 Nguyễn Kiệm</i></a>
+                <a><i class="fa-solid fa-location-dot"></i> 371 Nguyễn Kiệm, phường 3, Gò Vấp, TP. Hồ Chí Minh</i></a>
             </div>
         </div>
         <img src="/assets/img/logo.png">
