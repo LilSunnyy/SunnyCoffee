@@ -1,19 +1,16 @@
     //Mobile Menu Button
-    var nav = document.querySelector('.topnav')
-    var mobileMenu = document.querySelector('#mobile-menu')
+    var nav = document.getElementById('header');
+    var mobileMenu = document.getElementById('mobile-menu')
     var navHeight = nav.clientHeight;
     mobileMenu.onclick = function () { 
-        var isClosed = nav.clientHeight === navHeight;
+        var isClosed = nav.clientHeight === 50;
         if (isClosed) {
             nav.style.height = 'auto';
         }
         else {
-            nav.style.height = null;
+            nav.style.height = '50px';
         }
 }
-
-    
-    
     // Hide/show auth-form
         const modal_overlay = document.getElementsByClassName("modal__overlay")[0];
         const modal = document.getElementsByClassName("modal")[0];

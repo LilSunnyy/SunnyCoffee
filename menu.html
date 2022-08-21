@@ -11,28 +11,30 @@
     <link rel="preload" href="assets/font/NittiTypewriter-21d2137501e11e71a7bc1d5f496a6b7f.otf" as="font" crossorigin="anonymous">
     <link href="./assets/css/main.css" rel="stylesheet" ;>
     <link href="./assets/css/base.css" rel="stylesheet" ;>
+    <link href="./assets/css/responsive.css" rel="stylesheet" ;>
     <script src="https://kit.fontawesome.com/b2e34e875b.js" as="font" crossorigin="anonymous"></script>
 </head>
 
 <body style="overflow: visible;">
     <div class="app">
-        <header class="header">
-
-            <nav class="contact">
-                <a href="#">Email: dieuxuan666@gmail.com</a>
-                <a href="#">Hỏi đáp</a>
-                <a href="#" onclick="showModal()">Đăng nhập</a>
-                <a href="#" onclick="showModal()">Đăng ký</a>
-            </nav>
-            <div class=" topnav">
-                    <img src="./assets/img/logo.png">
-                    <a href="index.html">Trang chủ</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="workshops.html">Hệ thống cửa hàng</a>
-                    <a href="about.html">Giới thiệu</a> 
-                    <a href="contact.html">Liên hệ</a>                   
-    </div>
-    </header>
+        <div class="contact">
+            <a href="#">Email: dieuxuan666@gmail.com</a>
+            <a href="#">Hỏi đáp</a>
+            <a href="#" onclick="showModal()">Đăng nhập</a>
+            <a href="#" onclick="showModal()">Đăng ký</a>
+        </div>
+        <div id="header">
+            <ul class="topnav" id="myTopnav">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="workshops.html">Hệ thống cửa hàng</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>                   
+            </ul>
+            <div class="mobile-menu-button" id="mobile-menu">
+                <i class="menu-icon fa-solid fa-bars"></i>
+            </div>      
+        </div>
     </div>
     <div class="container">
         <div class="menu">
@@ -383,7 +385,7 @@
                     <p>Tổng cộng: <span class="cart-modal-box__total-price">0</span> đ</p>
                 </div> 
                 <button class="cart-modal-box__button">Đặt hàng</button>  
-        </div>
+            </div>
         </div>
     </div>
     <div class="modal">
@@ -411,15 +413,12 @@
                         <button type="submit" class="submit-btn">Đăng ký</button>
                     </form>
                     <div class="auth-form__socials">
-                        <a href="#" class="auth-form__socials--facebook"><i
-                                class="auth-form__socials-icons fa-brands fa-square-facebook"></i> Đăng nhập bằng
-                            Facebook </a>
-                        <a href="#" class="auth-form__socials--instagram"><i
-                                class="auth-form__socials-icons fa-brands fa-square-instagram"></i> Đăng nhập bằng
-                            Instagram</a>
+                        <a href="#" class="auth-form__socials--facebook"><i class="auth-form__socials-icons fa-brands fa-square-facebook"></i> Đăng nhập bằng Facebook </a>
+                        <a href="#" class="auth-form__socials--instagram"><i class="auth-form__socials-icons fa-brands fa-square-instagram"></i> Đăng nhập bằng Instagram</a>
                     </div>
-                </div> 
+                </div>
             </div>
+
         </div>
     </div>
     </div>
@@ -431,7 +430,6 @@
             <a href="">Về chúng tôi</a>
             <a href="">Cửa hàng</a>
             <a href="">Khuyến mãi</a>
-            <a href="">Cơ hội nghề nghiệp</a>
         </div>
         <div>
             <a href="">Điều khoản sử dụng</a>

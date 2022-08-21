@@ -28,44 +28,37 @@ a {
     color: #666;
     font-size: 1vw;
 }
-
-.topnav {
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 100%;
+#header{
     background-color: rgb(170, 134, 105);
-    height: fit-content;
-    text-decoration: none;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
 }
-.mobile-menu-button{
-    font-size: 2.3vw;
-    color: #fff;
-}
-.topnav img{
-    position: relative;
-    width: 6%;
-    background-color: aliceblue;
-    border-radius: 50%;
-    z-index: 8;
-}
-.topnav>a {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 20px;
+.topnav {
     display: inline-block;
-    padding: 15px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 2.3vw;
-    font-family: 'Dancing Script', cursive;
+    height: 50px;
     overflow: hidden;
 }
-
+.topnav li{
+    display: inline-block;
+}
+.topnav li a {
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    padding: 0 4.5vw;
+    font-size: 35px;
+    line-height: 50px;
+}
+#header .mobile-menu-button,
+#header .menu-icon
+{   
+    float: right;
+}
+#header .menu-icon{
+    color: #fff;
+    font-size: 30px;
+    line-height:30px;
+    padding: 10px;
+}
 .topnav a:hover {
-    font-size: 40px;
+    font-size: 2.5vw;
     animation: bg 1s ease-in-out forwards;
     border-radius: 10px;
     filter: blur(0);
@@ -127,12 +120,12 @@ a {
     justify-content: space-around;
     font-family: 'NittiTypewriter', monospace;
     padding: 10vh;
-    flex-wrap: wrap;
     width: 100%;
     align-items: center;
+    overflow: hidden;
 }
 .col-6 {
-    height: 30vh;
+    height: 30vw;
     width: 40vw;
     display: flex;
     box-sizing: border-box;
@@ -267,6 +260,7 @@ footer {
 .footer a:hover{
     color: var(--button-color);
 }
+/* -----------------Menu----------------- */
 .productsWrap{
     position: relative;
     padding-top: 5%;
@@ -283,7 +277,7 @@ footer {
 .cat-Item{
     font-family: 'NittiTypewriter', monospace;
     color: var(--text-color);
-    font-size: 20px;
+    font-size: 1.6vw;
     line-height: 50px;
     
 }
@@ -336,7 +330,7 @@ h3{
 }
 .productsWrap .block-menu_item-title {
     font-family: 'Xanh Mono', monospace;
-    font-size: 20px;
+    font-size: 3vh;
     margin-bottom: 25px;
     text-transform: capitalize;
     padding-top: 30px;
@@ -358,23 +352,24 @@ h3{
 }
 .itemProducts-name{
     font-family: 'Xanh Mono', monospace;
-    font-size: 16px;
+    font-size: 2.5vh;
+    line-height: normal;
     color: var(--text-color);
     text-transform: uppercase;
-    margin: 10px;
+    margin: 1.5vh;
     text-align: center;
 }
 .itemProducts-price{
     font-family: 'NittiTypewriter', monospace;
-    font-size: 16px;
+    font-size: 2.5vh;
     color: var(--text-color);
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
     text-align: center;
 }
 .itemProducts-buying{
     text-align: center;
-    font-size: 20px;
+    font-size: 2vh;
     align-items: center;
 }
 .itemProducts-buying button:hover{
@@ -391,7 +386,7 @@ h3{
     border: none;
     background-color: transparent;
     color: #3c5e2c;
-    font-size: 20px;
+    font-size: 17px;
 }
 /*Cart*/
 .cart-modal{
@@ -467,6 +462,7 @@ h3{
     width: 40%;
     cursor: pointer;   
 }
+/*-------------------------About------------------------*/
 .script{
     position: relative;
     display: flex;
@@ -478,7 +474,8 @@ h3{
     font-size: 50px;
     color: var(--text-color);
     text-transform: uppercase;
-    margin: 50px;
+    margin: 30px;
+    line-height: normal;
     text-align: center;
 }
 .script > p{
@@ -491,6 +488,7 @@ h3{
 .script img{
     width: 100%;
 }
+/*-------------------------Workshops------------------------*/
 .map {
     margin-right: auto;
     text-align: center;
