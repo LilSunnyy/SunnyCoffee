@@ -45,7 +45,7 @@
             modal.style.display = "inline"
         }
     //Hide/show cart
-const buyBtns = document.querySelectorAll('.buying-btn');
+const openCart = document.querySelector('.shopping-cart');
 const cart = document.querySelector('.cart-modal');
 const closeCart = document.querySelector('.cart-close');
 function showCart() {
@@ -54,7 +54,52 @@ function showCart() {
 function hideCart() {
     cart.classList.remove('open')
 }
-for (const buyBtn of buyBtns) {
-    buyBtn.addEventListener('click', showCart)
-}
-closeCart.addEventListener('click', hideCart)
+openCart && openCart.addEventListener('click', showCart)
+closeCart && closeCart.addEventListener('click', hideCart)
+//Flying Item
+$(document).on('click', '.buying-btn', function (e) {
+    e.preventDefault();
+    var parent = $(this).parents('.itemProducts');
+    var shopCart = $(document).find('.shopping-cart');
+    var src = parent.find('img').css('background-image');
+    var parTop = parent.offset().top;
+    var parLeft = parent.offset().left;
+    $('<img />', {
+        class: 'flying-img-product',
+        src: src.slice(5,src.length-2)
+    }).appendTo('body').css({
+        'top': parTop,
+        'left': parLeft
+    });
+    setTimeout(function () {
+        $(document).find('.flying-img-product').css({
+            'top': shopCart.offset().top,
+            'left': shopCart.offset().left
+        });
+        setTimeout(function () {
+            $(document).find('.flying-img-product').remove();
+            var countItem = parseInt(shopCart.find('#count-item').data('count')) + 1;
+            shopCart.find('#count-item').text( countItem+ '').data('count',countItem);
+        }, 1000);
+    }, 500);
+});
+Slider
+var indexValue = 1;
+function btm_slide(e) { showImg(indexValue = e); }
+function showImg(e){
+    var i;
+    const img = document.querySelectorAll('.slider-images img');
+    const sliders = document.querySelectorAll('.slider-btm span');
+    if (e > img.length){e=1}
+    if (e < 1) { e = img.length }
+    for (i = 0; i < img.length; i++)
+    {
+        img[i].style.display = "none";
+    } 
+    for (i = 0; i < sliders.length; i++)
+    {
+        sliders[i].style.background= "rgba(255, 255, 255, 0.1)";
+    } 
+    img[e-1].style.display = "block";
+    sliders[e-1].style.background= "white";
+};

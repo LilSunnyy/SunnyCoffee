@@ -29,7 +29,7 @@
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="workshops.html">Hệ thống cửa hàng</a></li>
                     <li><a href="about.html">Giới thiệu</a></li>
-                    <li><a href="contact.html">Liên hệ</a></li>                   
+                    <li><a href="#">Liên hệ</a></li>                   
             </ul>
             <div class="mobile-menu-button" id="mobile-menu">
                 <i class="menu-icon fa-solid fa-bars"></i>
@@ -37,13 +37,27 @@
         </div>
     </div>
     <div class="container">
+        <section>
+            <div class=" slider">
+                <div class="slider-images">
+                    <img src="/assets/img/slider-1.jpg">
+                    <img src="/assets/img/slider-2.jpg">
+                    <img src="/assets/img/slider-3.jpeg">
+                </div>
+                <div class="slider-btm">
+                    <span onclick="btm_slide(1)"></span>
+                    <span onclick="btm_slide(2)"></span>
+                    <span onclick="btm_slide(3)"></span>
+                </div>
+            </div>
+        </section>
         <div class="story">
             <div class="script">
                 <h1>Giới thiệu</h1>
                 <p>
                     Xuất xứ từ vùng đất cà phê Tây Nguyên danh tiếng, Sunny Coffee là một đơn vị chuyên nghiệp trong lĩnh vực sản xuất cà phê nguyên chất, bột, hạt, Espresso. Tự hào là nhà phân phối cà phê cho các đại lý, siêu thị, quán cà phê lớn, nhỏ, Resort, Hotel, Coffeeshop, công ty… trên toàn quốc.
                 </p>
-                <img src="/assets/img/about-1.jpg">
+                <img src="/assets/img/about/about-1.jpg">
             </div>
             <div class="script">
                 <h1>Tầm nhìn</h1>
@@ -51,7 +65,7 @@
                     Chúng tôi luôn đưa đến khách hàng nhiều sự lựa chọn với những sản phẩm chất lượng cao và đảm bảo tốt nhất.
                     Chúng tôi trực tiếp sản xuất và phân phối các sản phẩm về cà phê sạch – cà phê nguyên chất với các dòng cà phê bột, hạt và Espresso. Do vậy luôn đem đến cho người tiêu dùng những sản phẩm hoàn hảo nhất
                 </p>
-                <img src="/assets/img/about-2.jpg">
+                <img src="/assets/img/about/about-2.jpg">
             </div>
             <div class="script">
                 <h1>Sản phẩm</h1>
@@ -59,21 +73,21 @@
                     Sunny Coffee luôn cập nhật những sản phẩm mới nhất về cà phê nguyên chất, bột, hạt, Espresso.
                     Với những sản phẩm chất lượng cao, đảm bảo tốt nhất, chúng tôi luôn đem đến cho khách hàng những sản phẩm hoàn hảo nhất.
                 </p>
-                <img src="/assets/img/about-3.jpg">
+                <img src="/assets/img/about/about-3.jpg">
             </div>
             <div class="script">
                 <h1>Sứ mệnh</h1>
                 <p>
                     Sứ mệnh của chúng tôi là khơi dậy trí tưởng tượng và mang đến cho khách hàng những trải nghiệm cảm xúc khác biệt về Việt Nam. Chúng tôi đang không ngừng sáng tạo với mục tiêu là tiến xa hơn để mang cà phê đến với thế giới; lan toả và truyền cảm hứng bằng trái tim của mỗi thành viên.
                 </p>
-                <img src="/assets/img/about-4.jpg">
+                <img src="/assets/img/about/about-4.jpg">
             </div>    
             <div class="script">
                 <h1>Nguồn gốc</h1>                
-                <img src="/assets/img/process-1.png">
-                <img src="/assets/img/process-2.jpg">
-                <img src="/assets/img/process-3.jpg">
-                <img src="/assets/img/process-4.jpg">
+                <img src="/assets/img/about/process-1.png">
+                <img src="/assets/img/about/process-2.jpg">
+                <img src="/assets/img/about/process-3.jpg">
+                <img src="/assets/img/about/process-4.jpg">
 
             </div>      
     </div>
@@ -138,5 +152,12 @@
     </footer>
     </div>
     <script src="./assets/my-js/my-js.js"> </script>
+    <script>
+        let i = 0
+        setInterval(() => {
+            i++
+            showImg((i % 3) + 1)
+        }, 2000)
+    </script>
 </body>
 </html>

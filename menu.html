@@ -12,6 +12,7 @@
     <link href="./assets/css/main.css" rel="stylesheet" ;>
     <link href="./assets/css/base.css" rel="stylesheet" ;>
     <link href="./assets/css/responsive.css" rel="stylesheet" ;>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/b2e34e875b.js" as="font" crossorigin="anonymous"></script>
 </head>
 
@@ -29,7 +30,7 @@
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="workshops.html">Hệ thống cửa hàng</a></li>
                     <li><a href="about.html">Giới thiệu</a></li>
-                    <li><a href="contact.html">Liên hệ</a></li>                   
+                    <li><a href="#">Liên hệ</a></li>                   
             </ul>
             <div class="mobile-menu-button" id="mobile-menu">
                 <i class="menu-icon fa-solid fa-bars"></i>
@@ -47,6 +48,11 @@
                         <a href="#Sữa Chua" class="cat-Item"> Sữa Chua</a>
                     </ul>
                 </div>
+                <button class="shopping-cart" type="button">
+                    <img style="width: 80px; position: relative;" src="/assets/img/cart.gif">
+                    Giỏ hàng (
+                    <span id="count-item" data-count = 0 > 0 </span>)
+                </button>
                 <div class="grid">
                         <div id="Cà Phê" class="block-menu_item">
                             <div class="block-menu_item-title">
@@ -65,7 +71,7 @@
                                             <p> 30.000 đ</p>
                                         </div>
                                         <div class="itemProducts-buying">
-                                            <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                            <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +87,7 @@
                                             <p> 35.000 đ</p>
                                         </div>
                                         <div class="itemProducts-buying">
-                                            <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                            <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -97,7 +103,7 @@
                                             <p> 45.000 đ</p>
                                         </div>
                                         <div class="itemProducts-buying">
-                                            <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                            <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +119,7 @@
                                             <p> 55.000 đ</p>
                                         </div>
                                         <div class="itemProducts-buying">
-                                            <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                            <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -129,7 +135,7 @@
                                             <p> 60.000 đ</p>
                                         </div>
                                         <div class="itemProducts-buying">
-                                            <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                            <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -145,7 +151,7 @@
                                             <p> 30.000 đ</p>
                                         </div>
                                         <div class="itemProducts-buying">
-                                            <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                            <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +175,7 @@
                                         <p> 40.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -185,7 +191,7 @@
                                         <p> 35.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -201,7 +207,7 @@
                                         <p> 35.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +223,7 @@
                                         <p> 45.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -233,7 +239,7 @@
                                         <p> 45.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +255,7 @@
                                         <p> 50.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -273,7 +279,7 @@
                                         <p> 45.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +295,7 @@
                                         <p> 45.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -305,7 +311,7 @@
                                         <p> 45.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div> 
@@ -330,7 +336,7 @@
                                         <p> 55.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -346,7 +352,7 @@
                                         <p> 55.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -362,7 +368,7 @@
                                         <p> 55.000 đ</p>
                                     </div>
                                     <div class="itemProducts-buying">
-                                        <button class="btn buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
+                                        <button class="buying-btn"><i class="fa-solid fa-mug-saucer"></i></button>
                                     </div>
                                 </div>
                             </div>                 
