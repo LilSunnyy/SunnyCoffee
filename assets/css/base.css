@@ -152,12 +152,3 @@ html {
 .auth-form__socials-icons {
     margin: 0 8px;
 }
-
-#login {
-    left: 50px;
-}
-
-#register {
-    left: 50px;
-    display: none;
-}

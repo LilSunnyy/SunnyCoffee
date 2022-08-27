@@ -19,10 +19,7 @@
 
         const toggle_login = document.getElementsByClassName("toggle-btn-login");
         const toggle_register = document.getElementsByClassName("toggle-btn-register");
-        // function onToggle() {
-        //     form_register.style.display = form_register.style.display == "none" ? "inline" : "none";
-        //     form_login.style.display = form_login.style.display == "inline" ? "none" : "inline";
-        // }
+        
         function login() {
             form_register.style.display = "none";
             form_login.style.display = "inline";
@@ -49,7 +46,7 @@ const openCart = document.querySelector('.shopping-cart');
 const cart = document.querySelector('.cart-modal');
 const closeCart = document.querySelector('.cart-close');
 function showCart() {
-    cart.classList.add('open')
+    cart.classList.add('open') //thêm class vào thẻ html
 }
 function hideCart() {
     cart.classList.remove('open')
@@ -57,7 +54,7 @@ function hideCart() {
 openCart && openCart.addEventListener('click', showCart)
 closeCart && closeCart.addEventListener('click', hideCart)
 //Flying Item
-$(document).on('click', '.buying-btn', function (e) {
+$(document).on('click', '.buying-btn', function (e) { //.on( events [, selector ] [, data ], handler )
     e.preventDefault();
     var parent = $(this).parents('.itemProducts');
     var shopCart = $(document).find('.shopping-cart');
@@ -83,7 +80,7 @@ $(document).on('click', '.buying-btn', function (e) {
         }, 1000);
     }, 500);
 });
-Slider
+//Slider
 var indexValue = 1;
 function btm_slide(e) { showImg(indexValue = e); }
 function showImg(e){

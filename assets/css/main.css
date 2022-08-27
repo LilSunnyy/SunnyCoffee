@@ -249,7 +249,7 @@ footer {
     color: var(--black-color);
 }
 .footer img{
-    width: 200px;
+    width: 15vw;
     position: relative;
 }
 .footer a:hover{
