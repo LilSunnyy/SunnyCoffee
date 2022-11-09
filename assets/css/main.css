@@ -416,7 +416,7 @@ h3{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(/assets/img/cart-background-3.jpg);
+    background-image: url(assets/img/cart-background-3.jpg);
     background-size: contain;
     padding: 15px;
     border: 1px solid #3c5e2c;
